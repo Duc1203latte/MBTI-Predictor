@@ -36,26 +36,27 @@ Kết quả best model cho từng chiều:
 | J/P | SVM | 0.6597 |
 
 ## Cấu trúc project
-mbti_predictor/
-├── data/
-│   └── mbti_1.csv          ← dataset (không được commit)
-├── models/
-│   ├── best_I_E.pkl        ← model tốt nhất chiều I/E
-│   ├── best_N_S.pkl        ← model tốt nhất chiều N/S
-│   ├── best_T_F.pkl        ← model tốt nhất chiều T/F
-│   ├── best_J_P.pkl        ← model tốt nhất chiều J/P
-│   └── vectorizer.pkl      ← TF-IDF vectorizer
-├── src/
-│   ├── preprocess.py       ← tiền xử lý dữ liệu
-│   ├── features.py         ← TF-IDF + train/test split
-│   ├── train_lr_sklearn.py ← train Logistic Regression
-│   ├── train_svm.py        ← train SVM
-│   ├── train_rf.py         ← train Random Forest
-│   ├── select_best.py      ← chọn best model
-│   └── predict.py          ← hàm dự đoán
-├── app.py                  ← Streamlit web app
-├── requirements.txt
-└── README.md
+## Cấu trúc project
+
+- 📁 **data/** — dữ liệu
+  - `mbti_1.csv` — dataset gốc (không commit)
+- 📁 **models/** — các model đã train
+  - `best_I_E.pkl` — model tốt nhất chiều I/E
+  - `best_N_S.pkl` — model tốt nhất chiều N/S
+  - `best_T_F.pkl` — model tốt nhất chiều T/F
+  - `best_J_P.pkl` — model tốt nhất chiều J/P
+  - `vectorizer.pkl` — TF-IDF vectorizer
+- 📁 **src/** — source code
+  - `preprocess.py` — tiền xử lý dữ liệu
+  - `features.py` — TF-IDF + train/test split
+  - `train_lr_sklearn.py` — train Logistic Regression
+  - `train_svm.py` — train SVM
+  - `train_rf.py` — train Random Forest
+  - `select_best.py` — chọn best model
+  - `predict.py` — hàm dự đoán
+- `app.py` — Streamlit web app
+- `requirements.txt`
+- `README.md`
 ## Cài đặt và chạy local
 
 ```bash
