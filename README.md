@@ -78,7 +78,7 @@ streamlit run app.py
 
 ## Demo
 
-Truy cập: [link Streamlit Cloud sau khi deploy]
+Truy cập: [https://mbti-predictor-wcxkutnyb22kyqdcduzhv8.streamlit.app/]
 
 ## Tác giả
 
