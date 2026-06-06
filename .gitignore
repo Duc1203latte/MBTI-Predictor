@@ -1,0 +1,20 @@
+# Môi trường ảo
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyCharm
+.idea/
+
+# Dữ liệu thô (nặng, không cần thiết cho người clone)
+data/mbti_1.csv
+data/mbti_processed.csv
+
+# File tạm
+*.log
+.DS_Store
